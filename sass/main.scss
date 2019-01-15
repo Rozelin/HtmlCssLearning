@@ -1,0 +1,31 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: pink;
+}
+
+/* BEM approach in .sass structure */
+.block {        // .block
+    color: white;
+    &__model {  // .block__model  
+        color: blue;
+        &--modifier {  // .block__model--modifier
+            color: green;
+        }
+    }
+    
+    &.addition {  // .block.addition
+        color: red;
+    }
+    .child {  //.block .child
+        color: yellow;
+    }
+    &:before { //.block:before
+        display: block;
+        content: 'Before content';
+        color: violet;
+    }
+
+}

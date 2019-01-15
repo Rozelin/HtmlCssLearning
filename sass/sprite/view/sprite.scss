@@ -1,0 +1,54 @@
+%svg-common {
+	background: url("svg/sprite.view.svg") no-repeat;
+}
+
+.svg-map-marker-1 {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-map-marker-1-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-pencil {
+	@extend %svg-common;
+	background-position: 50% 0;
+}
+
+.svg-pencil-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-rocket {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-rocket-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-signal {
+	@extend %svg-common;
+	background-position: 50% 100%;
+}
+
+.svg-signal-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-user1 {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-user1-dims {
+	width: 52px;
+	height: 52px;
+}
+
