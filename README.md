@@ -52,6 +52,7 @@ If you will use them, then install [NodeJs](https://nodejs.org/uk/download/) (ju
 
 And then from your `/app` folder run
 > npm init 
+
 and then install [Gulp](https://gulpjs.com) 
 ```
 > npm install gulp-cli -g
@@ -85,9 +86,12 @@ Add to root dir of your app new directory and file `/app/sass/styles.scss` and w
 
 After runnig 
 > gulp sass
+
 from `/app` dir you will get minified `/css/styles.css` file.
 Command 
+
 > gulp watch
+
 will watch your `/sass` dir and will rebuild `styless.css` after each change.
 
 ### 7) Try to break your PSD layout into separate blocks. 

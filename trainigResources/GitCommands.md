@@ -23,10 +23,13 @@ If you see some files or folders which should not be saved to Git (folder `node_
 To save changed files add these files to tracked list
 
 > git add -u
+
 (-u stands for `untracked` ) or
 > git add .
+
 (. stands for `all`) or 
 > git add <fileName>
+
 if you need to add any separate file.
 
 Check if files were added. `> git status` will show these files in `green` color.
@@ -44,17 +47,20 @@ Now check if commit was saved.
 You will see list of latest commits including those which were made to parent branch (Master in this case).
 
 > Ctrl + c 
+
 to quit from log list.
 
 Now checkout Master branch back
 
 > git checkout master
+
 NOTE: you do not need `-b` if you check out existing local branch.
 
 Check files in your folders/IDE - they are the same as they were in Master branch before all your changes.
 Now checkout your working branch again.
 
 > git checkout yourNewBranchName
+
 Check files in your folders/IDE
 
 To save your working branch to remote repository do:
@@ -69,8 +75,10 @@ This will create local `remoteBranch` which will track remote `remoteBranch` bra
 To get latest changes from remote `remoteBranch` branch
 > git checkout remoteBranch  
 > git pull origin remoteBranch
+
 (this will get changes only for this branch) or 
 > git fetch 
+
 (`fetch` will get changes for whole repository)
 
 
