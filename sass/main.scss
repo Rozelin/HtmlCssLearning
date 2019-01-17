@@ -3,64 +3,136 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: pink;
 }
 
-/* BEM approach in .sass structure */
-.block {        // .block
-    color: white;
-    &__model {  // .block__model  
-        color: blue;
-        &--modifier {  // .block__model--modifier
-            color: green;
+li {
+    list-style-type: none;
+}
+
+body {
+    position: relative;
+    font-family: $font-regular;
+}
+
+.wrapper {
+    width: 100%;
+}
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.topBar {
+    position: absolute;
+    z-index: 1;
+    background-color: $header-opaq;
+
+    .container {
+        display: flex;
+    }
+}
+
+.header_logo {
+    margin: auto auto auto 20px;
+}
+
+.header_nav {
+    display: flex;
+}
+
+.header_nav-link {
+    display: inline-block;
+    font-size: 13px;
+    font-family: $font-bold;
+    color: $primary-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 50px 5px;
+
+    &:hover,
+    &:focus {
+        position: relative;
+        color: $accent-color;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: $accent-color;
         }
     }
+}
+
+.megaBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: 
+    linear-gradient($banner-opaq),
+    url('../assets/imgs/kaffee-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+
+    [class^="title"] {
+        text-transform: uppercase;
+        color: $primary-white;
+        font-family: $font-bold;
+        margin-bottom: 15px;
+    }
+    .title-1 {
+        font-size: 35px;
+        span {
+            color: $accent-color;
+        }
+    }
+    .title-2 {
+        font-size: 79px;
+    }
+    .title-3 {
+        font-size: 34px;
+        text-transform: capitalize;
+        font-family: $font-light;
+    }
+}
+.controls {
+    margin-top: 100px;
+}
+
+[class^="controls_btn"] {
+    min-width: 160px;
+    padding: 20px;
+    font-size: 13px;
+    color: $primary-white;
+    text-transform: uppercase;
+    font-family: $font-bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    box-shadow: 0 -5px 0 0 $primary-white;
     
-    &.addition {  // .block.addition
-        color: red;
-    }
-    .child {  //.block .child
-        color: yellow;
-    }
-    &:before { //.block:before
-        display: block;
-        content: 'Before content';
-        color: violet;
-    }
-    .new {
-        color: green;
+}
+.controls_btn--green {
+    background-color: $accent-color;
+    &:hover,
+    &:focus {
+        background-color: darken($accent-color, 10%);
     }
 }
-
-.form { 
-
-    &_input {
-
-
-        &--valid {
-
-        }
-
-        &--invalid {
-
-
-        }
+.controls_btn--blue {
+    background-color: $complimentary-blue;
+    &:hover,
+    &:focus {
+        background-color: darken($complimentary-blue, 10%);
     }
-
 }
 
-.form_input {
 
-}
-
-.form_input--invalid {
-
-}
-
-ul li a {
-
-}
-
-.form. invalid:before {
-     
-}

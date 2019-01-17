@@ -8,8 +8,8 @@
 }
 
 .svg-map-marker-1-dims {
-	width: 52px;
-	height: 52px;
+	width: 512px;
+	height: 512px;
 }
 
 .svg-pencil {
@@ -18,8 +18,8 @@
 }
 
 .svg-pencil-dims {
-	width: 52px;
-	height: 52px;
+	width: 512px;
+	height: 512px;
 }
 
 .svg-rocket {
@@ -28,8 +28,18 @@
 }
 
 .svg-rocket-dims {
-	width: 52px;
-	height: 52px;
+	width: 512px;
+	height: 512px;
+}
+
+.svg-search {
+	@extend %svg-common;
+	background-position: 69.74208369458688% 50.207547410339814%;
+}
+
+.svg-search-dims {
+	width: 67.733px;
+	height: 4.233px;
 }
 
 .svg-signal {
@@ -38,8 +48,8 @@
 }
 
 .svg-signal-dims {
-	width: 52px;
-	height: 52px;
+	width: 512px;
+	height: 512px;
 }
 
 .svg-user1 {
@@ -48,7 +58,7 @@
 }
 
 .svg-user1-dims {
-	width: 52px;
-	height: 52px;
+	width: 512px;
+	height: 512px;
 }
 
