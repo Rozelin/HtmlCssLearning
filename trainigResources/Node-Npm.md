@@ -104,7 +104,7 @@ Open Bash console from that folder and run
 
 That will install all dependencies for the project (`node_modules` folder is created).
 Look if `package.json` has anything interesting in `scripts`. 
-If there is `start` or `dev` script - you may try to run it in console. 
+If there is `start` or `dev` script - you may try to run it in console (`npm run start` or `npm run dev`). 
 These scripts are normally start local server with your project.
 
 Then look if there is a `gulpfile.js`. Check which commands does it have. 
