@@ -33,7 +33,7 @@ To save changed files add these files to tracked list
 > git add .
 
 (. stands for `all`) or 
-> git add <fileName>
+> git add [fileName]
 
 if you need to add any separate file.
 
