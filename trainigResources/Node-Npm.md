@@ -1,4 +1,4 @@
-### NodeJs is
+## NodeJs is
 
 a platform that uses V8 engine to run JavaScript. 
 
@@ -29,7 +29,7 @@ Those which are used only for development purpose are saved to `devDependencies`
 
 More info on a project/package you can find in `README.md` - it's like a book contents for a project. 
 
-### How to work with NPM
+## How to work with NPM
 
 ## Case 1: You create your own project
 
@@ -45,7 +45,7 @@ Then initialize `packages.json` of project.
 You need to enter appropriate info in prompt fields, or just press `Enter` on each step - that will create `package.json` with empty fields. You may fill them later.
 If you know that you will use any dependencies in this project you may import them.
 
-# Import [Gulp](https://www.npmjs.com/package/gulp)
+### Import [Gulp](https://www.npmjs.com/package/gulp)
 
 > npm install gulp-cli -g --save-dev
 > npm i gulp -D
@@ -111,7 +111,7 @@ Then look if there is a `gulpfile.js`. Check which commands does it have.
 `gulp.task` method will help you.
 
 
-### Additional Reading
+## Additional Reading
 1) [Package.json info](https://docs.npmjs.com/files/package.json)
 2) [NPM install](https://docs.npmjs.com/cli/install)
 3) [Semantic Package Versioning](https://docs.npmjs.com/about-semantic-versioning)
