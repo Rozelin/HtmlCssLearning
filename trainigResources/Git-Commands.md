@@ -1,6 +1,6 @@
 ### Git flow with git commands
 
-1) Clone remote repository (get link under button `Clone with HTTPS` in required repo)
+Clone remote repository (get link under button `Clone with HTTPS` in required repo)
 
 > git clone https://github.com/Rozelin/HtmlCssLearning.git
 
@@ -97,5 +97,27 @@ To get latest changes from remote `remoteBranch` branch
 
 (`fetch` will get changes for whole repository)
 
+# How to Update Working Branch From Remote Master
+
+Go to master branch
+> git checkout master
+
+Update your local Master branch from remote repo
+> git pull origin master
+
+Go to your working branch
+> git checkout yourWorkingBranchName
+
+Merge master into your current working branch
+> git merge master
+
+Resolve conflicts, if any. (Ask me how!)
+Then form merge commit
+> i
+
+Enter commit message and press `Esc`, then
+> :wq 
+
+And press `Enter`
 
 
