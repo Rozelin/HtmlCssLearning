@@ -4,7 +4,12 @@
 
 > git clone https://github.com/Rozelin/HtmlCssLearning.git
 
-You will get local copy or remote repo on branch `Master`. 
+Then navigate to newly created project folder. 
+
+> cd HtmlCssLearning
+
+In any case run `git` commands from the diretory where `.git` folder or `.gitignore` file is placed.
+Here you will get local copy or remote repo on branch `Master`. 
 In GitBash console you will see name of current branch in blue color.
 
 Then create new branch (your working branch) out of Master. Set any appropriate branch name instead of `yourNewBranchName`
