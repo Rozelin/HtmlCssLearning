@@ -13,7 +13,7 @@ Install [NodeJs](https://nodejs.org/uk/download/) if it is absent.
 
 ### NPM (Node Package Manager)
 
-Developers create some JS functionality (like transpiling Scss into CSS or creating SVG sprite with Sass stylesheets out pf separate SVGs)
+Developers create some JS functionality (like transpiling Scss into CSS or creating SVG sprite with Sass stylesheets out of separate SVGs)
 and to distribute this functionality to other developers they wrap it into so called `packages`.
 
 We can search for these packages [here](https://www.npmjs.com/)
@@ -67,18 +67,18 @@ Flag `-g` or `--global` makes this package globally available (available from an
 
 Check new dev dependencies in your `package.json`.
 
-Check new folder in the roo dir - `node_modules`. All npn packages will be saved here. 
+Check new folder in the root dir - `node_modules`. All npm packages will be saved here. 
 
 Do not forget to add `node_modules/` to `.gitignore` if you use Git. 
 Because `node_modules` folder will become too large to save it to git. 
 
 It's enough to send to git repo only `package.json` with information about all your dependencies.
 
-As far as Gulp itsef does nothing, it's only a wrapper that can run other scripts, we need to install some scripts (packages) which will do something. 
+As far as Gulp itsef does nothing (it's only a wrapper that can run other scripts) we need to install some scripts (packages) which will do something. 
 
-If you need to compile Sass into CSS, you may find [scss plugin](https://gulpjs.com/plugins/) 
+If you need to compile Sass into CSS, you may find [scss plugins](https://gulpjs.com/plugins/) 
 
-like [this](https://www.npmjs.com/package/gulp-scss) 
+like [gulp-scss](https://www.npmjs.com/package/gulp-scss) 
 
 and install it.
 
