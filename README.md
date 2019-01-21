@@ -51,7 +51,8 @@ ______/ Montserrat.woff2
 If you will use them, then install [NodeJs](https://nodejs.org/uk/download/) (just once)
 
 And then from your `/app` folder run
-`> npm init` 
+> npm init 
+
 and then install [Gulp](https://gulpjs.com) 
 ```
 > npm install gulp-cli -g
@@ -59,7 +60,7 @@ and then install [Gulp](https://gulpjs.com)
 ```
 
 Then install Scss plagin for [Gulp-Scss](https://github.com/dlmanning/gulp-sass)
-`> npm install node-sass gulp-sass --save-dev`
+> npm install node-sass gulp-sass --save-dev
 
 and then create simple gulp script for this Gulp plugin. Create file `gulpfile.js`  and put the following code in there
 ```
@@ -84,10 +85,13 @@ gulp.task('sass:watch', function () {
 Add to root dir of your app new directory and file `/app/sass/styles.scss` and write your style file there. Don't forget to use `.scss` extention.
 
 After runnig 
-`> gulp sass`
+> gulp sass
+
 from `/app` dir you will get minified `/css/styles.css` file.
 Command 
-`> gulp watch`
+
+> gulp watch
+
 will watch your `/sass` dir and will rebuild `styless.css` after each change.
 
 ### 7) Try to break your PSD layout into separate blocks. 
@@ -110,7 +114,7 @@ Please, play with it [Flexbox Guide](https://css-tricks.com/snippets/css/a-guide
 ### 9) How to create SVG sprite with Gulp
 
 install [Gulp plugin for SVG sprite](https://www.npmjs.com/package/gulp-svg-sprite)
-`> npm i gulp-svg-sprite --save-dev`
+> npm i gulp-svg-sprite --save-dev
 
 Add new dependencies and task to your `gulpfile.js`
 ```
@@ -161,3 +165,4 @@ Use JPEG format for full color photos. It has high % of compression.
 Use PNG format for images with transparent background. PNGs are large, but may have good image quality with transparency effects.
 Use GIF is you need animated image, or low colors quality with transparency.
 Use SVG for graphic images (icons, logos, gradient backgrounds, some fonts etc.)
+
