@@ -1,0 +1,172 @@
+/* Import of dependencies */
+.svg-map-marker-1, .svg-pencil, .svg-rocket, .svg-signal, .svg-user1 {
+  background: url("svg/sprite.view.svg") no-repeat; }
+
+.svg-map-marker-1 {
+  background-position: 0 0; }
+
+.svg-map-marker-1-dims {
+  width: 52px;
+  height: 52px; }
+
+.svg-pencil {
+  background-position: 50% 0; }
+
+.svg-pencil-dims {
+  width: 52px;
+  height: 52px; }
+
+.svg-rocket {
+  background-position: 0 100%; }
+
+.svg-rocket-dims {
+  width: 52px;
+  height: 52px; }
+
+.svg-signal {
+  background-position: 50% 100%; }
+
+.svg-signal-dims {
+  width: 52px;
+  height: 52px; }
+
+.svg-user1 {
+  background-position: 100% 0; }
+
+.svg-user1-dims {
+  width: 52px;
+  height: 52px; }
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* BEM approach in .sass structure */
+.block {
+  color: white; }
+  .block__model {
+    color: blue; }
+    .block__model--modifier {
+      color: green; }
+  .block.addition {
+    color: red; }
+  .block .child {
+    color: yellow; }
+  .block:before {
+    display: block;
+    content: 'Before content';
+    color: violet; }
+
+body {
+  position: relative; }
+
+.container {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex; }
+
+.banner {
+  background-image: url("../assets/imgs/card-bg.jpg");
+  min-height: 100vh; }
+
+.header_logo {
+  display: inline-block;
+  margin: auto auto auto 20px; }
+
+.header_nav {
+  display: flex; }
+
+.header_nav-item {
+  list-style: none; }
+
+.header_nav-link {
+  display: inline-block;
+  font-size: 13px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 50px 5px; }
+
+.wrapper {
+  width: 100%; }
+
+.top-nav {
+  position: absolute;
+  background-color: rgba(225, 225, 225, 0.3);
+  z-index: 1;
+  display: flex; }
+
+a:hover {
+  color: #18cfab; }
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 150vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.title-1 {
+  color: #ffffff;
+  font-size: 35pt;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; }
+  .title-1 .theme {
+    color: #18cfab; }
+
+.title-2 {
+  color: #ffffff;
+  font-size: 79pt;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; }
+
+.title-3 {
+  color: #ffffff;
+  font-size: 34pt;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  text-transform: capitalize; }
+
+.btn-links {
+  padding: 60px 2px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-size: 13pt;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #d0e5a4;
+  text-transform: uppercase;
+  text-align: center; }
+  .btn-links--green {
+    position: relative;
+    margin: 50px 40px 50px 50px;
+    display: inline-block;
+    padding: 20px 30px;
+    border: 1px solid #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #18cfab;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0px 6px 0 0 #ffffff;
+    -moz-box-shadow: inset 0px 6px 0 0 #ffffff;
+    -webkit-box-shadow: inset 0px 6px 0 0 #ffffff; }
+  .btn-links--blue {
+    display: inline-block;
+    padding: 20px 30px;
+    border: 1px solid #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #00cbf6;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0px 6px 0 0 #ffffff;
+    -moz-box-shadow: inset 0px 6px 0 0 #ffffff;
+    -webkit-box-shadow: inset 0px 6px 0 0 #ffffff; }
