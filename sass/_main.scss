@@ -1,0 +1,96 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+.svg-map-marker-1, .svg-pencil, .svg-rocket, .svg-signal, .svg-user1 {
+  background: url("svg/sprite.view.svg") no-repeat; }
+
+.svg-map-marker-1 {
+  background-position: 0 0; }
+
+.svg-map-marker-1-dims {
+  width: 52px;
+  height: 52px; }
+
+.svg-pencil {
+  background-position: 50% 0; }
+
+.svg-pencil-dims {
+  width: 52px;
+  height: 52px; }
+
+.svg-rocket {
+  background-position: 0 100%; }
+
+.svg-rocket-dims {
+  width: 52px;
+  height: 52px; 
+}
+
+.svg-signal {
+  background-position: 50% 100%; 
+}
+
+.svg-signal-dims {
+  width: 52px;
+  height: 52px; 
+}
+
+.svg-user1 {
+  background-position: 100% 0; 
+}
+
+.svg-user1-dims {
+  width: 52px;
+  height: 52px; 
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: grey; 
+  box-sizing: border-box;
+}
+
+  li {
+    list-style-type: none;
+  }
+
+  body {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.wrapper {
+  width: 100%; }
+  
+.container {
+  width: 1190;
+  margin: 0 auto; }
+
+.topNav {
+  display: flex;}
+
+.header_nav {
+  display: flex; }
+
+.header_nav-link {
+  display: inline-block;
+  font-size: 13pt;
+  font-family: "Montserrat", sans-serif;
+  color: #bdbdbd;
+  text-decoration: none; /* remove text underline */ 
+  text-transform: uppercase;
+  padding: 50px 5px; }
+
+  .megaBanner{
+    display: flex;
+    flex-direction: column;
+  }
