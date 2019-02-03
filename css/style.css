@@ -1,5 +1,45 @@
 /* Import of dependencies */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 .svg-map-marker-1, .svg-pencil, .svg-rocket, .svg-signal, .svg-user1 {
+  background: url("svg/sprite.view.svg") no-repeat; }
+
+.svg-map-marker-1 {
+  background-position: 0 0; }
+
+.svg-map-marker-1-dims {
+  width: 52px;
+  height: 52px; }
+
+.svg-pencil {
+  background-position: 50% 0; }
+
+.svg-pencil-dims {
+  width: 52px;
+  height: 52px; }
+
+.svg-rocket {
+  background-position: 0 100%; }
+
+.svg-rocket-dims {
+  width: 52px;
+  height: 52px; }
+
+.svg-signal {
+  background-position: 50% 100%; }
+
+.svg-signal-dims {
+  width: 52px;
+  height: 52px; }
+
+.svg-user1 {
+  background-position: 100% 0; }
+
+.svg-user1-dims {
+  width: 52px;
+  height: 52px; }
+
+/* Import of dependencies */
+/* .svg-map-marker-1, .svg-pencil, .svg-rocket, .svg-signal, .svg-user1 {
   background: url("svg/sprite.view.svg") no-repeat; }
 
 .svg-map-marker-1 {
@@ -40,24 +80,124 @@
 /* Reset */
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: pink; }
+  padding: 0; }
 
-/* BEM approach in .sass structure */
-.block {
-  color: white; }
-  .block__model {
-    color: blue; }
-    .block__model--modifier {
-      color: green; }
-  .block.addition {
-    color: red; }
-  .block .child {
-    color: yellow; }
-  .block:before {
-    display: block;
-    content: 'Before content';
-    color: violet; }
-  .block .new {
-    color: green; }
+li {
+  list-style-type: none; }
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif; }
+
+.wrapper {
+  width: 100%; }
+
+.container {
+  width: 1190px;
+  margin: 0 auto; }
+
+.topNav {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(73, 71, 63, 0.6); }
+
+.topNav .container {
+  display: flex; }
+
+.header_logo {
+  margin: auto auto auto 20px; }
+
+.header_nav {
+  display: flex; }
+
+.header_nav-link {
+  display: inline-block;
+  font-size: 13pt;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  /* remove text underline */
+  text-transform: uppercase;
+  padding: 50px 5px; }
+
+.megaBanner {
+  display: flex;
+  justify-content: center;
+  /* title 1-3 */
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../assets/imgs/kaffee-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.megaBanner [class^="title"] {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 15px; }
+
+.megaBanner .title1 {
+  font-size: 35px; }
+
+.megaBanner .title1 span {
+  color: #18cfab; }
+
+.megaBanner .title2 {
+  font-size: 79px; }
+
+.megaBanner .title3 {
+  font-size: 34px;
+  color: #d4d4d4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-transform: capitalize; }
+
+.controls {
+  margin-top: 100px; }
+
+[class^="controls_btn"] {
+  min-width: 160;
+  padding: 20px;
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  box-shadow: 0 -5px 0 0 #ffffff; }
+
+.controls_btn--green {
+  background-color: #43d0ad; }
+
+.controls_btn--green:hover, .controls_btn--green:focus {
+  background-color: #2db392; }
+
+.controls_btn--blue {
+  background-color: #00cbf6; }
+
+.controls_btn--blue:hover, .controls_btn--blue:focus {
+  background-color: #00a1c3; }
+
+.footerBanner {
+  display: flex; }
+
+[class^="opt_"] {
+  width: 25%;
+  display: inline-block;
+  text-transform: uppercase; }
+
+.opt_light {
+  background-color: #18cfab;
+  color: #ffffff; }
+
+.opt_dark {
+  background-color: #1c2a33;
+  color: #18cfab; }
