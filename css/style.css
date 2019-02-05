@@ -183,7 +183,8 @@ body {
 .controls_btn--blue {
   background-color: #00cbf6; }
 
-.controls_btn--blue:hover, .controls_btn--blue:focus {
+.controls_btn--blue:hover,
+.controls_btn--blue:focus {
   background-color: #00a1c3; }
 
 .footerBanner {
@@ -201,3 +202,13 @@ body {
 .opt_dark {
   background-color: #1c2a33;
   color: #18cfab; }
+
+.page2Banner {
+  text-align: center; }
+
+.page2 {
+  display: flex;
+  flex-wrap: wrap; }
+
+.page2Content {
+  width: 33%; }
