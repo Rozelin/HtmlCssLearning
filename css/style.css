@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Import of dependencies */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 .svg-map-marker-1, .svg-pencil, .svg-rocket, .svg-signal, .svg-user1 {
@@ -237,3 +238,95 @@ body {
   line-height: 30px;
   width: 320px;
   text-align: justify; }
+
+.blackBlockPage2 {
+  background-color: #000000;
+  font-family: "Montserrat";
+  /* sans-serif убрала, т.к.шрифт не тот получался, что надо */
+  display: flex; }
+
+.blackBlock1 {
+  height: 180px; }
+
+.blackBlock2 {
+  background-color: #b3b3b3;
+  height: 100px;
+  width: 57%;
+  text-align: right; }
+
+.blackBlock3 {
+  background-color: #b3b3b3;
+  height: 120px;
+  width: 75%;
+  text-align: right; }
+
+.blackBlock4 {
+  background-color: #b3b3b3;
+  height: 275px;
+  width: 93%;
+  text-align: right; }
+
+.AboutOurCompany {
+  text-align: left;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 36pt;
+  margin: 95px 0 40px 0;
+  /*  когда я оставляю только первый параметр, ничего не меняется. Ожидается, что если значение одно, то это будет отступ со всех сторон, верно? */ }
+
+.blackBlockLeft {
+  width: 50%; }
+
+.blackBlockRight {
+  width: 50%;
+  /* padding: 0 390px auto 15px; */ }
+
+.rightWrap {
+  margin: 0 390px auto 15px; }
+
+.ulAbout {
+  text-transform: uppercase;
+  text-align: left;
+  color: #ffffff;
+  display: flex;
+  font-size: 16pt;
+  font-weight: 700;
+  margin: 80px 0 50px 0;
+  /* в чем разница писать 0 или авто? */ }
+
+.liAbout {
+  margin: 0 25px 0 0; }
+
+.AboutWrap {
+  border: 1px solid #959595;
+  margin: 13px 0; }
+
+[class^="AboutLines"] {
+  text-transform: uppercase;
+  font-size: 13pt;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: left;
+  /* margin: 13px; */
+  padding: 13px 17px;
+  /* здесь долно быть свойство, которое рисует рамку блока */ }
+
+.AboutLines1 {
+  background-color: #9c5da5;
+  width: 72%; }
+
+.AboutLines2 {
+  background-color: #11b0de;
+  width: 85%; }
+
+.AboutLines3 {
+  background-color: #d67f7f;
+  width: 67%; }
+
+.AboutLines4 {
+  background-color: #20bc9d;
+  width: 90%; }
+
+.AboutLines5 {
+  background-color: #bb8a36;
+  width: 85%; }
