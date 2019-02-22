@@ -115,7 +115,6 @@ body {
 .header_nav-link {
   display: inline-block;
   font-size: 13pt;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
@@ -138,7 +137,6 @@ body {
 .megaBanner [class^="title"] {
   text-transform: uppercase;
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin: 15px; }
 
@@ -154,7 +152,6 @@ body {
 .megaBanner .title3 {
   font-size: 34px;
   color: #d4d4d4;
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-transform: capitalize; }
 
@@ -167,7 +164,6 @@ body {
   font-size: 13px;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: center;
   border: none;
@@ -190,7 +186,9 @@ body {
   background-color: #00a1c3; }
 
 .footerBanner {
-  display: flex; }
+  display: flex;
+  height: 365px;
+  text-align: center; }
 
 [class^="opt_"] {
   width: 25%;
@@ -199,50 +197,53 @@ body {
 
 .opt_light {
   background-color: #18cfab;
-  color: #ffffff; }
+  color: #ffffff;
+  border-top: 7px solid; }
 
 .opt_dark {
   background-color: #1c2a33;
-  color: #18cfab; }
+  color: #18cfab;
+  border-top: 7px solid; }
+
+.optimg {
+  height: 50%; }
+
+.opttext {
+  height: 50%; }
 
 .page2Banner {
   text-align: center; }
 
 .page2 {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 0 auto 25px auto; }
 
-.page2Title {
-  margin: 100px 0 115px 0;
-  font-family: "Montserrat, sans-serif";
+.page2Content {
+  width: 30%;
+  margin: 0 auto 75px auto; }
+
+.pageTitle {
+  margin: 100px auto 110px auto;
   font-weight: 400;
   font-size: 35pt;
   color: #4e4e4e; }
 
-.page2Content {
-  width: 33%;
-  margin: 35px auto 0 0; }
-
 [class^="ContentTitle"] {
-  font-family: "Montserrat, sans-serif";
   font-weight: 700;
   font-size: 18pt;
   color: #717171;
   margin: 0 0 25px 0; }
 
 [class^="ContentText"] {
-  font-family: "Montserrat, sans-serit";
   font-weight: 300;
   font-size: 14pt;
   color: #acacac;
   line-height: 30px;
-  width: 320px;
   text-align: justify; }
 
 .blackBlockPage2 {
   background-color: #000000;
-  font-family: "Montserrat";
-  /* sans-serif убрала, т.к.шрифт не тот получался, что надо */
   display: flex; }
 
 .blackBlock1 {
@@ -279,10 +280,9 @@ body {
 
 .blackBlockRight {
   width: 50%;
+  margin-left: auto;
+  margin-bottom: 80px;
   /* padding: 0 390px auto 15px; */ }
-
-.rightWrap {
-  margin: 0 390px auto 15px; }
 
 .ulAbout {
   text-transform: uppercase;
@@ -330,3 +330,24 @@ body {
 .AboutLines5 {
   background-color: #bb8a36;
   width: 85%; }
+
+.page3Banner {
+  text-align: center;
+  background-color: #f8fcfe; }
+
+.page3Menu {
+  display: flex;
+  background-color: #ffffff;
+  font-size: 14pt; }
+
+[class^="page3MenuItem"] {
+  display: inline-block;
+  border: 1px solid #ebebeb;
+  margin: 20px 30px; }
+
+.page3Gallary {
+  display: flex; }
+
+[class^=page3GallaryItem] {
+  display: inline-block;
+  width: 25%; }

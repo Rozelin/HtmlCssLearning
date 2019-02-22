@@ -47,42 +47,51 @@
    }
 
   li {
-    list-style-type: none;}
+    list-style-type: none;
+  }
 
   body {
     position: relative;
-    font-family: "Montserrat", sans-serif;}
+    font-family: "Montserrat", sans-serif;
+  }
 
 .wrapper {
-  width: 100%; }
+  width: 100%; 
+}
 
 .container {
   width: 1190px;
   margin: 0 auto; 
- /* height: 1380; */ }
+ /* height: 1380; */ 
+}
 
 .topNav {
   position: absolute;
   z-index: 1;
-  background-color: rgba(73, 71, 63, 0.6); } 
+  background-color: rgba(73, 71, 63, 0.6); 
+} 
 .topNav .container {
-  display: flex;} 
+  display: flex;
+} 
 
 .header_logo {
-  margin: auto auto auto 20px;}
+  margin: auto auto auto 20px;
+}
 
   .header_nav {
-    display: flex; }
+    display: flex; 
+  }
 
 .header_nav-link {
   display: inline-block;
   font-size: 13pt;
-  font-family: "Montserrat", sans-serif;
+  // font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none; /* remove text underline */ 
   text-transform: uppercase;
-  padding: 50px 5px; }
+  padding: 50px 5px; 
+}
 
   .megaBanner{
     display: flex;
@@ -93,28 +102,33 @@
     background-image: url("../assets/imgs/kaffee-bg.jpg"); 
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;}
+    background-attachment: fixed;
+  }
 .megaBanner [class^="title"] {
   text-transform: uppercase;
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  margin: 15px;}
+   font-weight: 700;
+  margin: 15px;
+}
 .megaBanner .title1 {
-  font-size: 35px;}
+  font-size: 35px;
+}
 .megaBanner .title1 span {
-  color: #18cfab;}
+  color: #18cfab;
+}
 .megaBanner .title2 {
-  font-size: 79px;}
+  font-size: 79px;
+}
 .megaBanner .title3 {
   font-size: 34px;
   color: #d4d4d4;
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  text-transform: capitalize; }
+  text-transform: capitalize; 
+}
  
 .controls {
-  margin-top: 100px; }
+  margin-top: 100px; 
+}
 
 [class^="controls_btn"] {
   min-width: 160;
@@ -122,7 +136,6 @@
   font-size: 13px;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: center;
   border: none;
@@ -133,9 +146,11 @@
 }
 
 .controls_btn--green {
-  background-color: #43d0ad; }
+  background-color: #43d0ad; 
+}
   .controls_btn--green:hover, .controls_btn--green:focus {
-    background-color: #2db392; }
+    background-color: #2db392; 
+  }
 
 .controls_btn--blue {
   background-color: #00cbf6; 
@@ -147,9 +162,11 @@
 
 .footerBanner {
   display: flex;
+  height: 365px;
+  text-align: center;
 }
 
-[class^="opt_"] {
+[class^="opt_"] { 
   width: 25%;
   display: inline-block;
   text-transform: uppercase;
@@ -158,11 +175,21 @@
 .opt_light {
   background-color: #18cfab;
   color: #ffffff;
+  border-top: 7px solid;
 }
 
 .opt_dark {
   background-color: #1c2a33;
   color: #18cfab;
+  border-top: 7px solid;
+}
+
+.optimg {
+  height: 50%;
+}
+
+.opttext {
+  height: 50%;
 }
 
 .page2Banner {
@@ -171,39 +198,39 @@
 
 .page2 {
   display: flex;
-  flex-wrap: wrap; }
-
-.page2Title {
-  margin: 100px 0 115px 0;
-  font-family: "Montserrat, sans-serif";
-  font-weight: 400;
-  font-size: 35pt;
-  color: #4e4e4e; }
+  flex-wrap: wrap; 
+  margin: 0 auto 25px auto;
+}
 
 .page2Content {
-  width: 33%;
-  margin: 35px auto 0 0; }
+  width: 30%;
+  margin: 0 auto 75px auto; 
+}
+
+.pageTitle {
+  margin: 100px auto 110px auto;
+  font-weight: 400;
+  font-size: 35pt;
+  color: #4e4e4e; 
+}
 
 [class^="ContentTitle"] {
-  font-family: "Montserrat, sans-serif";
   font-weight: 700;
   font-size: 18pt;
   color: #717171; 
-  margin: 0 0 25px 0; }
+  margin: 0 0 25px 0; 
+}
 
 [class^="ContentText"] {
-  font-family: "Montserrat, sans-serit";
   font-weight: 300;
   font-size: 14pt;
   color: #acacac;
   line-height: 30px;
-  width: 320px;
   text-align: justify;
 }
 
 .blackBlockPage2 {
   background-color: #000000;
-  font-family: "Montserrat"; /* sans-serif убрала, т.к.шрифт не тот получался, что надо */ 
   display: flex;
 }
 
@@ -246,11 +273,9 @@
 
 .blackBlockRight {
   width: 50%;
+  margin-left: auto;
+  margin-bottom: 80px;
   /* padding: 0 390px auto 15px; */
-}
-
-.rightWrap {
-  margin: 0 390px auto 15px;
 }
 
 .ulAbout {
@@ -308,3 +333,31 @@
   background-color: #bb8a36;
   width:85%;
 }
+
+.page3Banner {
+  text-align: center;
+  background-color: #f8fcfe;
+}
+
+.page3Menu { 
+  display: flex;
+  background-color: #ffffff;
+  font-size: 14pt;
+}
+
+[class^="page3MenuItem"] { 
+  display: inline-block;
+  border: 1px solid #ebebeb;
+  margin: 20px 30px;
+}
+
+.page3Gallary { 
+  display: flex;
+}
+
+[class^=page3GallaryItem] { 
+  display: inline-block;
+  width: 25%;
+}
+
+// .btnLoadMore {}
