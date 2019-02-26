@@ -19,14 +19,14 @@
   width: 52px;
   height: 52px; }
 
-.svg-rocket {
+.svg-rocket { 
   background-position: 0 100%; }
 
 .svg-rocket-dims {
   width: 52px;
   height: 52px; }
 
-.svg-signal {
+.svg-signal { 
   background-position: 50% 100%; }
 
 .svg-signal-dims {
@@ -82,7 +82,7 @@
     display: flex; 
   }
 
-.header_nav-link {
+.header_nav-link { 
   display: inline-block;
   font-size: 13pt;
   // font-family: "Montserrat", sans-serif;
@@ -212,6 +212,7 @@
   font-weight: 400;
   font-size: 35pt;
   color: #4e4e4e; 
+  text-align: center;
 }
 
 [class^="ContentTitle"] {
@@ -219,6 +220,7 @@
   font-size: 18pt;
   color: #717171; 
   margin: 0 0 25px 0; 
+  text-align: left;
 }
 
 [class^="ContentText"] {
@@ -335,9 +337,13 @@
 }
 
 .page3Banner {
-  text-align: center;
   background-color: #f8fcfe;
 }
+
+// .page3Banner {
+//   text-align: center;
+//   background-color: #ffffff;
+// }
 
 .page3Menu { 
   display: flex;
@@ -353,11 +359,21 @@
 
 .page3Gallary { 
   display: flex;
+  flex-wrap: wrap;
 }
 
 [class^=page3GallaryItem] { 
-  display: inline-block;
-  width: 25%;
+  // display: inline-block;
+  width: 285px;
+  height: 205px;
+  background-color: grey;
 }
 
 // .btnLoadMore {}
+ .page4Menu {
+  display: flex;
+}
+
+[class^="page4MenuItem"] {
+  display: inline-block;
+}
