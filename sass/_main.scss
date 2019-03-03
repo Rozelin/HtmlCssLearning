@@ -215,7 +215,7 @@
   text-align: center;
 }
 
-[class^="ContentTitle"] {
+.ContentTitle {
   font-weight: 700;
   font-size: 18pt;
   color: #717171; 
@@ -223,7 +223,7 @@
   text-align: left;
 }
 
-[class^="ContentText"] {
+.ContentText {
   font-weight: 300;
   font-size: 14pt;
   color: #acacac;
@@ -346,34 +346,33 @@
 // }
 
 .page3Menu { 
+  justify-content: center;
   display: flex;
   background-color: #ffffff;
   font-size: 14pt;
+  align-items: center;
 }
 
-[class^="page3MenuItem"] { 
-  display: inline-block;
+.page3MenuItem { 
   border: 1px solid #ebebeb;
-  margin: 20px 30px;
+  padding: 20px 15px;
 }
 
 .page3Gallary { 
   display: flex;
   flex-wrap: wrap;
+  margin: 70px auto;
 }
 
-[class^=page3GallaryItem] { 
-  // display: inline-block;
+.page3GallaryItem { 
   width: 285px;
   height: 205px;
   background-color: grey;
 }
 
 // .btnLoadMore {}
- .page4Menu {
+ .page3Menu2 {
   display: flex;
 }
 
-[class^="page4MenuItem"] {
-  display: inline-block;
-}
+// .page3Menu2Item { }
