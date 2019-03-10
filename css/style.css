@@ -206,10 +206,18 @@ body {
   border-top: 7px solid; }
 
 .optimg {
-  height: 50%; }
+  height: 50%;
+  position: relative; }
+
+.optimg img {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  margin: 0 40%; }
 
 .opttext {
-  height: 50%; }
+  height: 50%;
+  padding: 45px; }
 
 .page2Banner {
   text-align: center; }
@@ -334,18 +342,19 @@ body {
   width: 85%; }
 
 .page3Banner {
-  background-color: #f8fcfe; }
+  background-color: #f8fcfe;
+  text-align: center; }
 
 .page3Menu {
   justify-content: center;
   display: flex;
-  background-color: #ffffff;
   font-size: 14pt;
-  align-items: center; }
+  font-weight: 400; }
 
 .page3MenuItem {
   border: 1px solid #ebebeb;
-  padding: 20px 15px; }
+  padding: 20px 30px;
+  background-color: #ffffff; }
 
 .page3Gallary {
   display: flex;
@@ -355,7 +364,52 @@ body {
 .page3GallaryItem {
   width: 285px;
   height: 205px;
-  background-color: grey; }
+  background-color: grey;
+  background-size: cover;
+  overflow: hidden; }
+
+.page3GallaryItem img {
+  width: 100%;
+  height: 100%; }
+
+.btnLoadMore {
+  height: 60px;
+  width: 165px;
+  background-color: #18cfab;
+  font-size: 14pt;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: auto auto 100px auto; }
+
+.page3Banner2 {
+  text-align: center;
+  background-color: #ffffff; }
 
 .page3Menu2 {
+  justify-content: center;
+  display: flex;
+  font-size: 16pt;
+  font-weight: 400;
+  width: 100%;
+  margin: 0px auto 25px auto; }
+
+.page3Menu2Item {
+  background-color: #f8fcfe;
+  padding: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: 1px solid #ebebeb; }
+
+.page3Content {
   display: flex; }
+
+.page3ContentImg img {
+  width: 195px;
+  height: 140px; }
+
+.page3ContentText {
+  font-size: 13pt;
+  font-weight: 300;
+  color: #777777;
+  text-align: justify; }
