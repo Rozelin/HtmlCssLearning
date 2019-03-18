@@ -159,7 +159,6 @@ body {
   margin-top: 100px; }
 
 [class^="controls_btn"] {
-  min-width: 160;
   padding: 20px;
   font-size: 13px;
   color: #ffffff;
@@ -205,54 +204,54 @@ body {
   color: #18cfab;
   border-top: 7px solid; }
 
-.optimg {
+.img_opt {
   height: 50%;
   position: relative; }
 
-.optimg img {
+.img_opt img {
   position: absolute;
   bottom: 0;
   display: block;
   margin: 0 40%; }
 
-.opttext {
+.txt_opt {
   height: 50%;
   padding: 45px; }
 
-.page2Banner {
+.creative_block {
   text-align: center; }
 
-.page2 {
+.creative_block {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 25px auto; }
 
-.page2Content {
+.creative_content {
   width: 30%;
   margin: 0 auto 75px auto; }
 
-.pageTitle {
+.page_title {
   margin: 100px auto 110px auto;
   font-weight: 400;
   font-size: 35pt;
   color: #4e4e4e;
   text-align: center; }
 
-.ContentTitle {
+.creative_title {
   font-weight: 700;
   font-size: 18pt;
   color: #717171;
   margin: 0 0 25px 0;
   text-align: left; }
 
-.ContentText {
+.creative_txt {
   font-weight: 300;
   font-size: 14pt;
   color: #acacac;
   line-height: 30px;
   text-align: justify; }
 
-.blackBlockPage2 {
+.about_block {
   background-color: #000000;
   display: flex; }
 
@@ -277,7 +276,7 @@ body {
   width: 93%;
   text-align: right; }
 
-.AboutOurCompany {
+.about_title {
   text-align: left;
   color: #ffffff;
   font-weight: 400;
@@ -288,13 +287,12 @@ body {
 .blackBlockLeft {
   width: 50%; }
 
-.blackBlockRight {
+.about_block_content {
   width: 50%;
   margin-left: auto;
-  margin-bottom: 80px;
-  /* padding: 0 390px auto 15px; */ }
+  margin-bottom: 80px; }
 
-.ulAbout {
+.about_ul {
   text-transform: uppercase;
   text-align: left;
   color: #ffffff;
@@ -304,14 +302,14 @@ body {
   margin: 80px 0 50px 0;
   /* в чем разница писать 0 или авто? */ }
 
-.liAbout {
+.about_li {
   margin: 0 25px 0 0; }
 
-.AboutWrap {
+.about_wrap {
   border: 1px solid #959595;
   margin: 13px 0; }
 
-[class^="AboutLines"] {
+[class^="about_line_"] {
   text-transform: uppercase;
   font-size: 13pt;
   color: #ffffff;
@@ -321,72 +319,66 @@ body {
   padding: 13px 17px;
   /* здесь долно быть свойство, которое рисует рамку блока */ }
 
-.AboutLines1 {
+.about_line_1 {
   background-color: #9c5da5;
   width: 72%; }
 
-.AboutLines2 {
+.about_line_2 {
   background-color: #11b0de;
   width: 85%; }
 
-.AboutLines3 {
+.about_line_3 {
   background-color: #d67f7f;
   width: 67%; }
 
-.AboutLines4 {
+.about_line_4 {
   background-color: #20bc9d;
   width: 90%; }
 
-.AboutLines5 {
+.about_line_5 {
   background-color: #bb8a36;
   width: 85%; }
 
-.page3Banner {
+.amazing_block {
   background-color: #f8fcfe;
   text-align: center; }
 
-.page3Menu {
+.amazing_menu {
   justify-content: center;
   display: flex;
   font-size: 14pt;
   font-weight: 400; }
 
-.page3MenuItem {
+.amazing_menu_item {
   border: 1px solid #ebebeb;
   padding: 20px 30px;
   background-color: #ffffff; }
 
-.page3Gallary {
+.amazing_gallary {
   display: flex;
   flex-wrap: wrap;
   margin: 70px auto; }
 
-.page3GallaryItem {
+.amazing_gallary_item {
   width: 285px;
   height: 205px;
   background-color: grey;
   background-size: cover;
   overflow: hidden; }
 
-.page3GallaryItem img {
+.amazing_gallary_item img {
   width: 100%;
   height: 100%; }
 
-.btnLoadMore {
-  height: 60px;
+.amazing_btn_load {
   width: 165px;
-  background-color: #18cfab;
-  font-size: 14pt;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 700;
   margin: auto auto 100px auto; }
 
-.page3Banner2 {
+.services_block {
   text-align: center;
   background-color: #ffffff; }
 
-.page3Menu2 {
+.services_menu {
   justify-content: center;
   display: flex;
   font-size: 16pt;
@@ -394,22 +386,60 @@ body {
   width: 100%;
   margin: 0px auto 25px auto; }
 
-.page3Menu2Item {
+.services_menu_item {
+  flex: auto;
+  position: relative;
   background-color: #f8fcfe;
   padding: 20px;
   margin-left: 0px;
   margin-right: 0px;
   border: 1px solid #ebebeb; }
+  .services_menu_item:hover:before {
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 10px solid green;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    transform: translateX(-50%);
+    left: 50%; }
 
-.page3Content {
-  display: flex; }
+.services_content {
+  display: flex;
+  margin: 25px auto 100px auto; }
 
-.page3ContentImg img {
+.services_img img {
   width: 195px;
   height: 140px; }
 
-.page3ContentText {
+.services_txt {
   font-size: 13pt;
   font-weight: 300;
   color: #777777;
-  text-align: justify; }
+  text-align: justify;
+  padding-left: 20px; }
+
+.justbuy_banner {
+  text-align: center;
+  background-color: #40474b;
+  height: 475px;
+  padding: 130px; }
+
+.justbuy_txt_1 {
+  font-size: 40pt;
+  color: #18cfab;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.justbuy_txt_2 {
+  font-size: 16pt;
+  color: #d8d8d8;
+  font-weight: 400;
+  margin: 35px auto 80px auto; }
+
+.justbuy_btn {
+  width: 165px; }
