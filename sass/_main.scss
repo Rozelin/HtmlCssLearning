@@ -482,13 +482,41 @@
 
 .breaking_calendar_item {
   position: relative;
-  width: 260px;
-  height: 220px;
-  margin: 15px;
+  width: 265px;
+  height: 300px;
+  //margin: 15px;
+  //background-color: #f8fcfe;
+  background-color: #00cbf6;
 }
 
 .breaking_calendar_img {
   display: block;
 }
 
+.breaking_calendar_date {
+  background-color: #203e38;
+  width: 65px;
+  height: 65px;
+  color: #ffffff;
+  font-size: 16pt;
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.breaking_calendar_title {
+  font-size: 16pt;
+  font-weight: 700;
+  color: #717171;
+}
+
+.breaking_calendar_text span {
+  font-size: 14pt;
+  font-weight: 300;
+}
+
 // почему justbuy_banner больше по высоте. чем на макете?
+
+// почему шрифт для breaking_calendar_title слишком большой? ширина блока
+// измерялась линейкой, размер шрифта должен быть 18
