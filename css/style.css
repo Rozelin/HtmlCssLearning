@@ -426,7 +426,7 @@ body {
 .justbuy_banner {
   text-align: center;
   background-color: #40474b;
-  height: 475px;
+  height: 465px;
   padding: 130px; }
 
 .justbuy_txt_1 {
@@ -442,4 +442,21 @@ body {
   margin: 35px auto 80px auto; }
 
 .justbuy_btn {
-  width: 165px; }
+  width: 165px;
+  margin: auto auto 125px auto; }
+
+.breaking_block {
+  margin: auto auto 100px auto; }
+
+.breaking_calendar {
+  display: flex;
+  flex-wrap: wrap; }
+
+.breaking_calendar_item {
+  position: relative;
+  width: 260px;
+  height: 220px;
+  margin: 15px; }
+
+.breaking_calendar_img {
+  display: block; }
