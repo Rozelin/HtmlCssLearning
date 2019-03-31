@@ -44,6 +44,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
    }
 
   li {
@@ -160,7 +161,7 @@
     background-color: #00a1c3; 
   }
 
-.footerBanner {
+.color_block {
   display: flex;
   height: 365px;
   text-align: center;
@@ -365,11 +366,11 @@
 .amazing_gallary { 
   display: flex;
   flex-wrap: wrap;
-  margin: 70px auto;
+  margin: 70px auto; 
 }
 
 .amazing_gallary_item { 
-  width: 285px;
+  width: 25%;
   height: 205px;
   background-color: grey;
   background-size: cover;
@@ -482,15 +483,20 @@
 
 .breaking_calendar_item {
   position: relative;
-  width: 265px;
+  width: 25%;
   height: 300px;
-  //margin: 15px;
-  //background-color: #f8fcfe;
-  background-color: #00cbf6;
+  padding: 15px;
+  text-align: left;
+  //background-color: #ffffff;
 }
 
 .breaking_calendar_img {
   display: block;
+  
+}
+
+.breaking_calendar_img img {
+  width: 100%;
 }
 
 .breaking_calendar_date {
@@ -501,22 +507,66 @@
   font-size: 16pt;
   font-weight: 400;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 15px;
+  right: 15px;
+  text-align: center;
 }
 
 .breaking_calendar_title {
   font-size: 16pt;
   font-weight: 700;
   color: #717171;
+  position: relative;
+  left: 15px;
+  //margin: 0px auto 15px auto;
 }
 
-.breaking_calendar_text span {
-  font-size: 14pt;
+.breaking_calendar_txt span {
+  font-size: 12pt;
   font-weight: 300;
+  position: relative;
+  left: 15px;
 }
 
-// почему justbuy_banner больше по высоте. чем на макете?
+.color_btn_items {
+  border: 2px solid red;
+  align-items: center;
+  align-content: center; 
+}
 
-// почему шрифт для breaking_calendar_title слишком большой? ширина блока
-// измерялась линейкой, размер шрифта должен быть 18
+.footer_img {
+  position: absolute;
+  display: block;
+  //bottom: 100px;
+  margin: 8% 11%;
+}
+
+.color_btn_figure {
+  position: relative;
+  left: 35%;
+  margin-top: 25%;
+  width: 110px;
+  height: 110px;
+  background-color:  #18cfab; 
+  border-radius: 50%;
+  box-shadow: #25333c 0 0 0 25px, #ffffff 0 0 0 10px;
+  //margin: 23% 35%;
+}
+
+.color_btn_figure img {
+  margin-top: 35%;
+}
+
+.pricing_table {
+  display: flex;
+  border: 1px solid grey;
+}
+
+.pricing_row_title {
+  font-size: 22pt;
+  font-weight: 700;
+}
+
+// .breaking_calendar_title - как сделать отступ после него?
+// как для второго opt_light указать border-color: light
+// почему кружок вокруг кружка не отображается?
